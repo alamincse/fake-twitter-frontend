@@ -139,19 +139,21 @@
                                             <p class="card-text">
                                                 <span class="btn btn-info"><strong>Followers {{ searchInfo.participant.total_follower }}</strong></span>
 
-                                                <button
-                                                    v-if="searchInfo.participant.is_following === 'No'"
-                                                    @click="doFollow(searchInfo.participant.id)"
-                                                    class="btn btn-primary"
-                                                    style="margin-left: 5px"
-                                                >Follow</button>
+                                                <template v-if="searchForm.email !== searchInfo.participant.email">
+                                                    <button
+                                                        v-if="searchInfo.participant.is_following === 'No'"
+                                                        @click="doFollow(searchInfo.participant.id)"
+                                                        class="btn btn-primary"
+                                                        style="margin-left: 5px"
+                                                    >Follow</button>
 
-                                                <button
-                                                    v-if="searchInfo.participant.is_following === 'Yes'"
-                                                    @click="doUnfollow(searchInfo.participant.id)"
-                                                    class="btn btn-success"
-                                                    style="margin-left: 5px"
-                                                >Following</button>
+                                                    <button
+                                                        v-if="searchInfo.participant.is_following === 'Yes'"
+                                                        @click="doUnfollow(searchInfo.participant.id)"
+                                                        class="btn btn-success"
+                                                        style="margin-left: 5px"
+                                                    >Following</button>
+                                                </template>
                                             </p>
                                         </div>
                                     </div>
