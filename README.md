@@ -10,7 +10,7 @@
 ```
 
 ## Installation
-Please clone and install backend repository [Fake Twitter Backend](https://gitlab.com/cseal.amin.09/fake-twitter) first
+Please clone and install backend repository [Fake Twitter Backend](https://github.com/alamincse/fake-twitter-backend) first
 
 ``` 
 1. git clone https://gitlab.com/cseal.amin.09/fake-twitter-frontend.git
