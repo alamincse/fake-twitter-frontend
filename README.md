@@ -7,6 +7,7 @@
 3. InertiaJS
 4. Laravel Passport (For JWT Token)
 5. Ziggy Router
+6. Bootstrap
 ```
 
 ## Installation
