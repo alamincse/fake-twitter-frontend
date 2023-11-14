@@ -152,7 +152,7 @@
                                                         @click="doUnfollow(searchInfo.participant.id)"
                                                         class="btn btn-success"
                                                         style="margin-left: 5px"
-                                                    >Followings</button>
+                                                    >Following</button>
                                                 </template>
                                             </p>
                                         </div>
