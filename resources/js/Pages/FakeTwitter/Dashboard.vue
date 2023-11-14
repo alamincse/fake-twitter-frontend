@@ -139,7 +139,7 @@
                                             <p class="card-text">
                                                 <span class="btn btn-info"><strong>Followers {{ searchInfo.participant.total_follower }}</strong></span>
 
-                                                <template v-if="searchForm.email !== searchInfo.participant.email">
+                                                <template v-if="searchInfo.participant.email !== userInfo.email">
                                                     <button
                                                         v-if="searchInfo.participant.is_following === 'No'"
                                                         @click="doFollow(searchInfo.participant.id)"
@@ -152,7 +152,7 @@
                                                         @click="doUnfollow(searchInfo.participant.id)"
                                                         class="btn btn-success"
                                                         style="margin-left: 5px"
-                                                    >Following</button>
+                                                    >Followings</button>
                                                 </template>
                                             </p>
                                         </div>
