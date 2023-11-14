@@ -50,7 +50,7 @@ Please clone and install backend repository [Fake Twitter Backend](https://gitla
 php artisan storage:link
 ```
 
-## Server
+## Serve
 ```
 1. php artisan key:generate [If app does not have key in .env file]
 2. php artisan serve --port=8080
